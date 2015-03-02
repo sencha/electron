@@ -48,8 +48,7 @@ bool IsGuestFrame(blink::WebFrame* frame) {
 
 AtomRendererClient::AtomRendererClient()
     : node_bindings_(NodeBindings::Create(false)),
-      atom_bindings_(new AtomBindings),
-      main_frame_(nullptr) {
+      atom_bindings_(new AtomBindings) {
 }
 
 AtomRendererClient::~AtomRendererClient() {
@@ -106,14 +105,9 @@ void AtomRendererClient::DidCreateScriptContext(blink::WebFrame* frame,
                                                 v8::Handle<v8::Context> context,
                                                 int extension_group,
                                                 int world_id) {
-  // Only attach node bindings in main frame or guest frame.
-  if (!IsGuestFrame(frame)) {
-    if (main_frame_)
-      return;
-
-    // The first web frame is the main frame.
-    main_frame_ = frame;
-  }
+  // Only attach node bindings in main frame.
+  if (frame->parent())
+    return;
 
   // Give the node loop a run to make sure everything is ready.
   node_bindings_->RunMessageLoop();
