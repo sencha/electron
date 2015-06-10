@@ -15,7 +15,7 @@
   <key>CFBundlePackageType</key>
   <string>APPL</string>
   <key>CFBundleIconFile</key>
-  <string>atom.icns</string>
+  <string>sencha.icns</string>
   <key>CFBundleVersion</key>
   <string>0.27.3</string>
   <key>LSMinimumSystemVersion</key>

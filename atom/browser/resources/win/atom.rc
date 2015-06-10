@@ -103,6 +103,6 @@ END
 // Icon
 //
 
-IDR_MAINFRAME           ICON                    "atom.ico"
+IDR_MAINFRAME           ICON                    "sencha.ico"
 /////////////////////////////////////////////////////////////////////////////
 

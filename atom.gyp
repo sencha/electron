@@ -1,9 +1,9 @@
 {
   'variables': {
-    'project_name%': 'electron',
-    'product_name%': 'Electron',
-    'company_name%': 'GitHub, Inc',
-    'company_abbr%': 'github',
+    'project_name%': 'senchainspector',
+    'product_name%': 'SenchaInspector',
+    'company_name%': 'Sencha, Inc',
+    'company_abbr%': 'sencha',
     'version%': '0.27.3',
 
     'atom_source_root': '<!(["python", "tools/atom_source_root.py"])',

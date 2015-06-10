@@ -6,6 +6,7 @@
     ],
     'bundle_sources': [
       'atom/browser/resources/mac/atom.icns',
+      'atom/browser/resources/mac/sencha.icns',
     ],
     'coffee_sources': [
       'atom/browser/api/lib/app.coffee',
@@ -402,6 +403,7 @@
         'app_sources': [
           'atom/browser/resources/win/resource.h',
           'atom/browser/resources/win/atom.ico',
+          'atom/browser/resources/win/sencha.ico',
           'atom/browser/resources/win/atom.rc',
           '<(libchromiumcontent_src_dir)/content/app/startup_helper_win.cc',
         ],
